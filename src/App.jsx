@@ -1,7 +1,7 @@
 import './App.css'
 import React from 'react'
 
-
+import Userinfo from './components/condicional/Userinfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import ListStudents from './components/repetição/ListStudents'
 import Familia from './components/basics/Familia'
@@ -21,6 +21,8 @@ export default  () => (
         <div className="Cards">
             <Card titulo="#08 - Renderização Condicional" color="#982395">
                     <ParOuImpar numero={20}></ParOuImpar>
+                    <Userinfo user={{name: 'Fernando'}} />
+                    <Userinfo user={{}} />
             </Card>
 
             <Card titulo="#07 - Products" color="#69e62e">
