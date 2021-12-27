@@ -8,7 +8,7 @@ export default props =>{
 
         return products.map((product, i)=>{
             return (
-                <tr key={product.id} className={i % 2 == 0 ? 'Par' : ''}>
+                <tr key={product.id} className={i % 2 === 0 ? 'Par' : ''}>
                     <td>{product.id}</td>
                     <td>{product.name}</td>
                     <td>{product.preco.toFixed(2)}</td>
