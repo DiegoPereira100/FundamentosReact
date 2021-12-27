@@ -9,6 +9,7 @@ import First from './components/basics/First'
 import OnParams from './components/basics/OnParams'
 import Fragmento from './components/basics/Fragment'
 import NumRandom from './components/basics/GetRandom'
+import ProductsTabels from './components/repetição/ProductsTabels'
 
 export default  () => (
 
@@ -16,6 +17,10 @@ export default  () => (
         <h1>Fundaments React</h1>
 
         <div className="Cards">
+            <Card titulo="#07 - Products" color="#69e62e">
+                    <ProductsTabels></ProductsTabels>
+            </Card>
+
             <Card titulo="#06 - Repetição" color="#FF4C65">
                     <ListStudents></ListStudents>
             </Card>
