@@ -1,19 +1,19 @@
 import React from "react";
-import If from "./If";
+import If, { Else } from "./If";
 
 export default props => {
 
-    const user = props.user || {}
+    const user = props.user || {};
 
     return  (
 
         <div>
             <If test={user && user.name}>
-                Seja Bem vindo <strong>{props.user.name}</strong>!
-            </If>
-            <If test={!user || !user.name}>
-                Seja Bem vindo <strong>Amigão</strong>!
+                Seja bem vindo <strong>{user.name}</strong>!
+                <Else>
+                    Seja bem vindo <strong>Amigão</strong>!
+                </Else>
             </If>
         </div>
-    )
-}
+    );
+};
