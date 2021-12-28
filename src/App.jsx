@@ -22,8 +22,8 @@ export default  () => (
         <h1>Fundaments React</h1>
 
         <div className="Cards">
-            <Card titulo="#11 - Componente Controlado (input)" color="#8BAD39">
-                 <IndirectFather></IndirectFather>
+            <Card titulo="#11 - Componente Controlado (input)" color="#E45F56">
+                 <Input></Input>
             </Card>
 
             <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
