@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import DirectFather from './components/comunication/DirectFather'
 import Userinfo from './components/condicional/Userinfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import ListStudents from './components/repetição/ListStudents'
@@ -19,6 +20,10 @@ export default  () => (
         <h1>Fundaments React</h1>
 
         <div className="Cards">
+            <Card titulo="#09 - Comunicação Direta" color="#59323C">
+                 <DirectFather></DirectFather>
+            </Card>
+
             <Card titulo="#08 - Renderização Condicional" color="#982395">
                     <ParOuImpar numero={21}></ParOuImpar>
                     <Userinfo user={{ name: 'Fernando'}} />
