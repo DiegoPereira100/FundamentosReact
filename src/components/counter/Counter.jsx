@@ -1,6 +1,10 @@
 import "./Counter.css";
 import React, { Component } from "react";
 
+import Display from "./Display";
+import Buttons from "./Buttons";
+import StepForm from "./StepForm";
+
 class Counter extends Component {
 
     state = {
@@ -20,9 +24,9 @@ class Counter extends Component {
         });
     }
 
-    setStep = (event) => {
+    setStep = (newStep) => {
         this.setState({
-            step: +event.target.value,
+            step: newStep,
         });
     };
 
@@ -30,16 +34,9 @@ class Counter extends Component {
         return (
             <div className="Counter">
                 <h2>Contador</h2>
-                <h3>{this.state.number}</h3>
-                    <div>
-                        <label htmlFor="InputStep">Passo: </label>
-                        <input id="InputStep" type="number"
-                            value={this.state.step}
-                            onChange={this.setStep}
-                        />
-                    </div>
-                <button onClick={this.inc}>+</button>
-                <button onClick={this.dec}>-</button>
+                <Display number={this.state.number}></Display>
+                    <StepForm step={this.state.step} setStep={this.setStep}></StepForm>
+                    <Buttons setInc={this.inc} setDec={this.dec}></Buttons>
             </div>
         )
     }
