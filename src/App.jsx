@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import Input from './components/form/Input'
+import IndirectFather from './components/comunication/IndirectFather'
 import DirectFather from './components/comunication/DirectFather'
 import Userinfo from './components/condicional/Userinfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
@@ -20,6 +22,14 @@ export default  () => (
         <h1>Fundaments React</h1>
 
         <div className="Cards">
+            <Card titulo="#11 - Componente Controlado (input)" color="#8BAD39">
+                 <IndirectFather></IndirectFather>
+            </Card>
+
+            <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+                 <IndirectFather></IndirectFather>
+            </Card>
+
             <Card titulo="#09 - Comunicação Direta" color="#59323C">
                  <DirectFather></DirectFather>
             </Card>

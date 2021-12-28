@@ -6,7 +6,7 @@ export default props => {
         <div>
             <span>({props.name}) </span>
             <span>{props.age} anos </span>
-            <span> = {props.nerd ? 'True' : 'False'}!</span>
+            <span> = {props.nerd ? 'Verdadeiro' : 'Falso'}!</span>
         </div>
     )
 }
